@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(26, 28, 52);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-main {
+    flex-grow: 1;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.raleway-uniquifier {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style: normal;
+    font-size:10vw 
+}
+
+
+h2,p,ul,input {
+    font-family:"raleway" ;
+    color: #3e3c3c;
+    font-size: 1em;
+    margin: 2; 
+    padding: 0;
+   }
+
+input {
+    font-size: 1em;
+    padding: 1px;
+}
+h1 {
+    font-family: "Raleway", sans-serif;
+    color: #3e3c3c;
+    font-size: 2em; 
+    white-space: nowrap; 
+    margin: 2; 
+    padding: 0; 
+    align-self: center;
+}   
+
+
+#get-pro-but, #get-own-pro-but, #get-planet-but {
+    background-color: #d1bfb1;
+    border-radius: 50px;
+    border-width: 0;
+    border: 1px solid black;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 2px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0 25px;
+    transition: all 200ms;
+    
+}   
+#get-own-pro-but {
+    background-color: rgb(198, 243, 228);
+}
+
+#get-pro-but:hover, #get-own-pro-but:hover, #get-planet-but:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+}
+
+
+.bild-header, .bild-footer {
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    height: auto; 
+    max-width: 100%; 
+}
+
+.container-uno, .container-dos, .container-tres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border: 3px solid black;
+    padding: 4vw;
+    border-radius: 0.3em;
+    margin: 5vw;
+    flex-basis: calc(33.33% - 20vw); 
+    min-width: 150px; 
+    max-width: 1000px;
+}
+
+.container-uno {
+    background-color: rgb(198, 243, 228);
+}
+
+.container-dos {
+    background-color:  #d1bfb1;
+}
+
+.container-tres {
+    background-color: rgb(198, 243, 228);
+}
+
+
+@media (max-width: 900px) {
+    #get-pro-but, #get-own-pro-but, #get-planet-but, {
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1em;
+    }
+}
